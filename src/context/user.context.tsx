@@ -32,7 +32,7 @@ import { getMe } from "@/services/AuthService";
   
     const handleUser = async () => {
       const user = await getMe() as IUser;
-      console.log(user);
+      console.log(user,"from user context");
   
       setUser(user);
       setIsLoading(false);
